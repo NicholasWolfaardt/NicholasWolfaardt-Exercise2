@@ -48,7 +48,7 @@
 # Question 3: Conditional Statements
 
 # TODO: Ask the user to input a test score (0-100) and store it in a variable called 'score'
-score = input("Enter the test score (0 - 100): ")
+score = int(input("Enter the test score (0 - 100): "))
 
 # TODO: Implement a grading system using if-elif-else statements:
 #       90-100: A
@@ -71,7 +71,7 @@ def grading(score):
   return grade
 
 # TODO: Print the grade for the given score
-
+print("The student's grade:", grading(score))
 
 #------------------------------------------------------------------------------------
 # Question 4: Combining Operators and Conditionals
