@@ -44,7 +44,7 @@
 # print("Final Condition:", final_condition())
 
 #------------------------------------------------------------------------------------
-# # Question 3: Conditional Statements
+# Question 3: Conditional Statements
 
 # # TODO: Ask the user to input a test score (0-100) and store it in a variable called 'score'
 # score = int(input("Enter the test score (0 - 100): "))
@@ -67,6 +67,8 @@
 #     grade = "D"
 #   elif score < 60:
 #     grade = "F"
+#   elif score < 0 or score > 100:
+#     grade = "Score not possible, try again"
 #   return grade
 
 # # # TODO: Print the grade for the given score
@@ -76,11 +78,35 @@
 # Question 4: Combining Operators and Conditionals
 
 # TODO: Ask the user to input two numbers and store them in variables 'num1' and 'num2'
+num1 = float(input("Type in a number for num1: "))
+num2 = float(input("Type in a number for num2: "))
 
 # TODO: Ask the user to input an operation (+, -, *, /) and store it in a variable called 'operation'
+operation = input("Type in an operation (+, -, *, /): ")
 
 # TODO: Use conditional statements to perform the chosen operation on num1 and num2
-# TODO: Handle the case of division by zero
+def result(num1, num2, operation):
+  if operation == "+":
+    result = num1 + num2
+  elif operation == "-":
+    result = num1 - num2
+  elif operation == "*":
+    result = num1 * num2
+  elif operation == "/":
+    result = num1 / num2
+  elif num1 != int or num2 != int:
+    result = "Please enter a number."
+  else:
+    result = "Please enter a proper operation."
+  return result
 
+# TODO: Handle the case of division by zero
+def zeroDivide(num2, operation):
+  if operation == "/" and num2 == 0:
+    return False
 
 # TODO: Print the result of the operation
+if zeroDivide(num2, operation):
+  print("You cannnot divide by 0.")
+else:
+  print(result(num1, num2, operation))
