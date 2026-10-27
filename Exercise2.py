@@ -18,10 +18,9 @@
 # # Question 2: Comparison and Logical Operators
 
 # # TODO: Create a condition that checks if a is greater than b
-# a = 5
-# b = 1
-# if a > b:
-#   print("a is greater than b?", a > b)
+# a = int(input("Type in a number for a: "))
+# b = int(input("Type in a number for b: "))
+# print("a is greater than b?", a > b)
 
 # # TODO: Create a condition that checks if b is even (hint: use the modulus operator)
 # if b % 2 == 0:
@@ -30,7 +29,7 @@
 #   print("b is uneven")
 
 # # TODO: Create a condition that checks if c is less than or equal to a
-# c = 5
+# c = int(input("Type in a number for c: "))
 # if c <= a:
 #   print("Is c less than or equal to a?", c <= a)
 
@@ -45,17 +44,17 @@
 # print("Final Condition:", final_condition())
 
 #------------------------------------------------------------------------------------
-# Question 3: Conditional Statements
+# # Question 3: Conditional Statements
 
 # # TODO: Ask the user to input a test score (0-100) and store it in a variable called 'score'
 # score = int(input("Enter the test score (0 - 100): "))
 
-# # TODO: Implement a grading system using if-elif-else statements:
-# #       90-100: A
-# #       80-89: B
-# #       70-79: C
-# #       60-69: D
-# #       Below 60: F
+# # # TODO: Implement a grading system using if-elif-else statements:
+# # #       90-100: A
+# # #       80-89: B
+# # #       70-79: C
+# # #       60-69: D
+# # #       Below 60: F
 # grade = ""
 # def grading(score):
 #   if score >= 90:
@@ -70,7 +69,7 @@
 #     grade = "F"
 #   return grade
 
-# # TODO: Print the grade for the given score
+# # # TODO: Print the grade for the given score
 # print("The student's grade:", grading(score))
 
 #------------------------------------------------------------------------------------
