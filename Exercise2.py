@@ -94,10 +94,6 @@ def result(num1, num2, operation):
     result = num1 * num2
   elif operation == "/":
     result = num1 / num2
-  elif num1 != int or num2 != int:
-    result = "Please enter a number."
-  else:
-    result = "Please enter a proper operation."
   return result
 
 # TODO: Handle the case of division by zero
