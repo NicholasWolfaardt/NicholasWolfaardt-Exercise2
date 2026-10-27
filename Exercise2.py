@@ -103,7 +103,7 @@ def result(num1, num2, operation):
 # TODO: Handle the case of division by zero
 def zeroDivide(num2, operation):
   if operation == "/" and num2 == 0:
-    return False
+    return True
 
 # TODO: Print the result of the operation
 if zeroDivide(num2, operation):
